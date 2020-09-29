@@ -1,0 +1,672 @@
+.body{
+  background: #F5F5F5;
+  font-family: 'Open Sans', sans-serif,Arial, Helvetica, sans-serif;
+  margin-top:0%;
+margin-right: 0%;
+margin-bottom: 0%;
+margin-left: 0%
+}
+
+* {box-sizing: border-box}
+
+/* navbar container*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  height:40px;
+  margin-bottom: 10px;
+
+}
+
+
+.logo {
+float: left;
+    vertical-align: center;
+    width: 100px;
+    height: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 12px;
+  color: #A2A2A2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .signup-btn {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: #9FFF4A;
+  padding: 4px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.arrows {
+  border: solid#9FFF4A;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.downs {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown .dropbtn {
+  font-size: 12px;
+  border: none;
+  outline: focus;
+  color: #A2A2A2;
+  padding: 4px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.dropdown .Product-btn {
+  font-size: 12px;
+  text-align: left;
+  border: none;
+  outline: none;
+  color: #A2A2A2;
+  padding: 5px 5px 5px 10px;
+  background-color:#FFFFFF;
+  border-radius: 5px 0 0 5px;
+  font-family: inherit;
+  width: 100px;
+  height: 35px;
+
+}
+
+.arrow {
+  border: solid#A2A2A2;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+  z-index:5000;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #A2A2A2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* second-navbar container*/
+
+.second-navbar {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  height:40px;
+  width: 100%;
+  margin-top: 58px;
+  margin-bottom: 5px;
+  text-align:left;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.second-navbar a {
+  font-size: 12px;
+  color:#FFFFFF ;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.second-dropdown {
+  float:center;
+  overflow: hidden;
+}
+
+.second-dropdown .secondbar-btn {
+  float:center;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  padding: 4px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.arroow {
+  border: solid#FFFFFF;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.doown {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+.second-navbar a:hover, .second-dropdown:hover .secondbar-btn {
+  background-color: red;
+}
+
+.second-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.second-dropdown-content a {
+  float: none;
+  color: #A2A2A2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.second-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.second-dropdown:hover .second-dropdown-content {
+  display: block;
+}
+
+.search {
+  width: 100%;
+  margin-top:0px;
+  margin-bottom:25px;
+  position: relative;
+  display: flex;
+}
+
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid #A2A2A2;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top:8px;
+  padding: 5px;
+  height: 35px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.search-bttn {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #F9EC5B;
+  background: #F9EC5B;
+  text-align:left;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 60%;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  height: 10px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border: 2px #A2A2A2;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*msgbox container*/
+
+.msgbox {
+  position: absolute;
+  width: 750px;
+  height: 350px;
+  top: 40%;
+  left: 25%;
+  margin: -100px 0 0 -150px;
+  background: #FFFFFF;
+  padding: 5px 31px 5px 39px;
+  z-index: auto;
+
+}
+
+.msgbox-logo {
+float: center;
+    vertical-align: center;
+    left:80px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+
+}
+
+
+.logo-row {
+  text-align: center;
+}
+
+
+.h1-row {
+  text-align: center;
+}
+
+
+
+.msgbox-btn {
+  position: relative;
+  background-color: #E7BC00;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 0px;
+  width: 650px;
+  height: 35px;
+  margin-top: 0px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.msgbox-btn:after {
+  content: "";
+  background: #F9EC5B;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.msgbox-btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
+/*bottom container*/
+
+.topbottom {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+/* topleftbottom container*/
+
+.topleftbottom {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  height:450px;
+  width:30%;
+  margin-top: 350px;
+
+}
+
+.headcon {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  color: #FFFFFF;
+  height:40px;
+  width:40%;
+  margin-top: 25px;
+  margin-left: 90px;
+  margin-right: -180px;
+  text-align:left;
+  z-index: 200;
+}
+
+.para {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  color: #FFFFFF;
+  height:420px;
+  width:70%;
+  margin-top:-40px;
+  margin-left: 90px;
+  text-align: left;
+  font-size: smaller;
+  line-height: 80%;
+  padding-top: 20%
+
+}
+
+/* topmiddelbottom container*/
+
+.topmiddelbottom {
+  overflow: hidden;
+  background-color:#A2A2A2;
+  height:450px;
+  width:30%;
+  margin-top: 350px;
+  text-align:left;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.container {
+	max-width:400px;
+	width:210%;
+	margin-top:-60px;
+  margin-right: 0px;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#A2A2A2;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h4 {
+	color: #F9F9F9;
+	display: block;
+
+}
+
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:110px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#F9EC5B;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/* toprightbottom container*/
+
+.toprightbottom {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  height:450px;
+  width:40%;
+  margin-top: 350px;
+  text-align:left;
+  display: flex;
+  z-index: -1;
+
+
+}
+
+.twr-head {
+  margin-top: 40px;
+  text-align: inherit;
+  color: #F9F9F9;
+  display: block;
+
+}
+
+.twt-container {
+  overflow: hidden;
+  background-color:#A2A2A2;
+  height:290px;
+  width:35%;
+  margin-top: -380px;
+  margin-left: 620px;
+  text-align:left;
+  display: flex;
+  z-index:5;
+}
+
+.fa-container {
+  overflow: hidden;
+  background-color:#A2A2A2;
+  height:40px;
+  width:25%;
+  margin-top: 0px;
+  margin-left: 715px;
+  text-align:left;
+  display: flex;
+  z-index:5000;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* lowerbottom container*/
+
+.lowerbottom {
+  overflow: hidden;
+  background-color: #A2A2A2;
+  height:40px;
+  width: 100%;
+  margin-top:50px;
+  text-align:left;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn{
+     width: 100%;
+  }
+}
